@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input {
+            width: 300px;
+            font-size: 20px;
+            margin: 5px;
+        }
+        button {
+            width: 230px;
+            font-size: 20px;
+            margin: 5px;
+        }
+        .button_div {
+            margin-top: 10px;
+        }
+        #container {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="input_div">
+            <input type="number" placeholder="Enter the value of X" id="num1"/>
+            <input type="number" placeholder="Enter the value of Y" id="num2"/>
+            <input placeholder="Result will appear here" id="res" disabled/>
+        </div>
+
+        <div class="button_div">
+            <button onclick="calculate('add')">Addition (X + Y)</button>
+            <button onclick="calculate('subtract')">Subtraction (X - Y)</button>
+            <button onclick="calculate('multiply')">Multiplication (X * Y)</button>
+            <button onclick="calculate('divide')">Division (X / Y)</button>
+        </div>            
+    </div>
+
+    <script src="task5script.js"></script>
+</body>
+</html>
